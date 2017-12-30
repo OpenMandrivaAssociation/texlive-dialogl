@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-dialogl
-Version:	20130125
-Release:	9
+Version:	20170414
+Release:	1
 Summary:	Macros for constructing interactive LaTeX scripts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dialogl
