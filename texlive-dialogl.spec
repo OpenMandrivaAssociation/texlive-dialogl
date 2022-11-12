@@ -1,19 +1,13 @@
-# revision 28946
-# category Package
-# catalog-ctan /macros/latex/contrib/dialogl
-# catalog-date 2013-01-25 11:22:08 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-dialogl
-Version:	20190228
+Version:	28946
 Release:	1
 Summary:	Macros for constructing interactive LaTeX scripts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dialogl
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dialogl.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dialogl.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dialogl.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dialogl.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dialogl.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dialogl.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ Gathers together a bunch of code and examples about how to
 write macros to carry on a dialogue with the user.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -58,7 +52,8 @@ write macros to carry on a dialogue with the user.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
