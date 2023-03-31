@@ -1,6 +1,6 @@
 Name:		texlive-dialogl
 Version:	28946
-Release:	1
+Release:	2
 Summary:	Macros for constructing interactive LaTeX scripts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dialogl
