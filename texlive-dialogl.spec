@@ -3,7 +3,7 @@ Version:	28946
 Release:	2
 Summary:	Macros for constructing interactive LaTeX scripts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dialogl
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/dialogl
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dialogl.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dialogl.doc.r%{version}.tar.xz
